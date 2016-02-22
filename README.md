@@ -21,7 +21,7 @@ For each script, you can run it without arguments to see example usage.
 If you are using this to migrate from WEA to NLC, we reccommend the following workflow:
 Step 0: Export the Ground truth XML from WEA. Make sure you export your groundtruth in the following way: 
 	Go to the following URL:https://watson-wdc01.ihost.com/instance/{YOUR_INSTANCE_ID}/predeploy/{YOUR_PROJECT_ID}/deepqa/tools/?action=/workbench/questionsets&root=true
-	Go to Ground Truth -> WEA Answer Key XML format. Put in a file name, and hit save.
+	Go to Ground Truth -> Ground Truth Snapshot format. Put in a file name, and hit save.
 	Download the output from the 'Messages' tab on the top right
 Step 1 : Use python/extract.py to convert ground truth snapshot into CSVs. 
 Step 2 : Use python/split.py to split train and test set. You will use the train set to 
