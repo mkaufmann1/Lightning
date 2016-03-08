@@ -13,7 +13,7 @@ Step 0: Export the Ground truth XML from WEA. Make sure you export your groundtr
 	Go to the following URL:https://watson-wdc01.ihost.com/instance/{YOUR_INSTANCE_ID}/predeploy/{YOUR_PROJECT_ID}/deepqa/tools/?action=/workbench/questionsets&root=true
 	Go to Ground Truth -> Ground Truth Snapshot format. Put in a file name, and hit save.	
 	Download the output from the 'Messages' tab on the top right
-Step 1 : Use python/extract.py to convert ground truth snapshot into CSVs.
+Step 1 : Use python/extract.py to convert ground truth snapshot into CSVs. The class labels extracted will be the PAU ID's. If you want to use human-readable names, use transform.py to substitute them in. 
 Step 2 : Use python/split.py to split train and test set. We recommend reserving 70% for training and 30% for testing
 Step 3 : Use python/train.py to train NLC using the train set. You can use python/view_classifiers.py to view the status of your classifier
 Step 4 : Use python/test.py to test NLC using the test set. 
